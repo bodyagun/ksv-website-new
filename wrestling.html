@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="light dark" />
+<title>Wrestling Gear — KSV Performance</title>
+<meta name="description" content="Singlets, training tees, and mat-ready apparel from KSV Performance Gear." />
+
+<link rel="icon" href="assets/ksvicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/theme.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/pages.css" />
+
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem("ksv-theme");
+      var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    } catch (e) {
+      document.documentElement.setAttribute("data-theme", "light");
+    }
+  })();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="nav-scrim"></div>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/ksv.png" alt="KSV Performance Gear home" width="38" height="38" />
+      <span class="nav-logo-text">KSV PERFORMANCE</span>
+    </a>
+
+    <ul class="nav-links">
+      <li class="nav-item">
+        <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+          New
+          <svg class="nav-caret" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="dropdown" role="menu">
+          <a class="dropdown-link" href="mma.html" role="menuitem"><strong>Drop 04 — Fight Week</strong><span>Fresh MMA rash guards &amp; shorts</span></a>
+          <a class="dropdown-link" href="wrestling.html" role="menuitem"><strong>Mat Ready</strong><span>New singlets just landed</span></a>
+          <a class="dropdown-link" href="team-kits.html" role="menuitem"><strong>National Kits</strong><span>Georgia, Germany &amp; Kazakhstan</span></a>
+          <a class="dropdown-link" href="index.html#hero" role="menuitem"><strong>Train Suit</strong><span>The piece everyone's asking about</span></a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="mma.html" aria-haspopup="true" aria-expanded="false">
+          MMA
+          <svg class="nav-caret" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="dropdown" role="menu">
+          <a class="dropdown-link" href="mma.html#rashguards" role="menuitem"><strong>Rash Guards</strong><span>Grip-ready, second-skin fit</span></a>
+          <a class="dropdown-link" href="mma.html#shorts" role="menuitem"><strong>Fight Shorts</strong><span>Built for full range of motion</span></a>
+          <a class="dropdown-link" href="mma.html#training" role="menuitem"><strong>Training Tees</strong><span>Camp essentials</span></a>
+          <a class="dropdown-link" href="mma.html" role="menuitem"><strong>Shop All MMA</strong><span>The complete lineup</span></a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="wrestling.html" aria-haspopup="true" aria-expanded="false" data-nav-match="wrestling.html">
+          Wrestling
+          <svg class="nav-caret" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="dropdown" role="menu">
+          <a class="dropdown-link" href="#singlets" role="menuitem"><strong>Singlets</strong><span>Competition &amp; training cut</span></a>
+          <a class="dropdown-link" href="#tees" role="menuitem"><strong>Training Tees</strong><span>Mat-session staples</span></a>
+          <a class="dropdown-link" href="team-kits.html" role="menuitem"><strong>National Team Kits</strong><span>Rep your country</span></a>
+          <a class="dropdown-link" href="wrestling.html" role="menuitem"><strong>Shop All Wrestling</strong><span>The complete lineup</span></a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="about.html" data-nav-match="about.html">About</a>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="search-pill" aria-disabled="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" placeholder="Search" readonly tabindex="-1" aria-label="Search (display only)" />
+      </div>
+      <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <span class="eyebrow">Wrestling</span>
+    <h1>MAT READY.</h1>
+    <p>Singlets and training essentials engineered for grip, range of motion, and the long haul of a season.</p>
+  </section>
+
+  <section class="section">
+    <div class="tabs-wrap">
+      <div class="tabbar" data-tabbar data-tab-panels="#wrestling-panels" role="tablist" aria-label="Wrestling categories">
+        <div class="tabbar-indicator"></div>
+        <button class="tab active" data-tab-target="all" aria-selected="true">All</button>
+        <button class="tab" data-tab-target="singlets" aria-selected="false">Singlets</button>
+        <button class="tab" data-tab-target="tees" aria-selected="false">Training Tees</button>
+      </div>
+    </div>
+
+    <div class="tab-panels" id="wrestling-panels">
+
+      <div class="tab-panel active" data-tab-id="all">
+        <div class="product-grid">
+
+          <article class="product-card" id="singlets">
+            <div class="product-media">
+              <span class="product-tag">Bestseller</span>
+              <img src="assets/germany-front.jpg" alt="KSV competition singlet, Germany colorway, front view" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Competition Singlet — Forged</h3>
+              <p>Four-way stretch with a compressive, second-skin fit built for the center of the mat.</p>
+              <div class="product-meta">
+                <span class="product-price">€64.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img src="assets/kazakhstan-front.jpg" alt="KSV competition singlet, blue and gold colorway, front view" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Competition Singlet — Steppe</h3>
+              <p>Reinforced seams at every stress point so it holds up through live go after live go.</p>
+              <div class="product-meta">
+                <span class="product-price">€64.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" id="tees">
+            <div class="product-media">
+              <img src="assets/model1.jpg" alt="KSV Train Suit long-sleeve layered training top" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Train Suit Long Sleeve</h3>
+              <p>Layered build with compression sleeves underneath — warm up in it, wrestle in it.</p>
+              <div class="product-meta">
+                <span class="product-price">€54.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-media">
+              <img src="assets/model2.jpg" alt="Close-up of KSV logo on a moisture-wicking training tee" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Core Training Tee</h3>
+              <p>The everyday mat-room staple: breathable, fast-drying, and built to survive the wash cycle.</p>
+              <div class="product-meta">
+                <span class="product-price">€32.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <div class="tab-panel" data-tab-id="singlets">
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <span class="product-tag">Bestseller</span>
+              <img src="assets/germany-front.jpg" alt="KSV competition singlet, Germany colorway, front view" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Competition Singlet — Forged</h3>
+              <p>Four-way stretch with a compressive, second-skin fit built for the center of the mat.</p>
+              <div class="product-meta">
+                <span class="product-price">€64.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="assets/kazakhstan-front.jpg" alt="KSV competition singlet, blue and gold colorway, front view" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Competition Singlet — Steppe</h3>
+              <p>Reinforced seams at every stress point so it holds up through live go after live go.</p>
+              <div class="product-meta">
+                <span class="product-price">€64.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="tab-panel" data-tab-id="tees">
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-media">
+              <img src="assets/model1.jpg" alt="KSV Train Suit long-sleeve layered training top" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Train Suit Long Sleeve</h3>
+              <p>Layered build with compression sleeves underneath — warm up in it, wrestle in it.</p>
+              <div class="product-meta">
+                <span class="product-price">€54.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-media">
+              <img src="assets/model2.jpg" alt="Close-up of KSV logo on a moisture-wicking training tee" loading="lazy" />
+            </div>
+            <div class="product-body">
+              <h3>Core Training Tee</h3>
+              <p>The everyday mat-room staple: breathable, fast-drying, and built to survive the wash cycle.</p>
+              <div class="product-meta">
+                <span class="product-price">€32.99</span>
+                <a class="product-cta" href="#">View</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-band" data-reveal>
+    <h2>Wrestle In Confidence.</h2>
+    <p>Looking to rep your country instead? Check out our national team kits.</p>
+    <a class="btn btn-primary" href="team-kits.html">View Team Kits</a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="assets/ksv.png" alt="KSV Performance Gear" width="40" height="40" />
+      <p>Combat-sport apparel engineered for wrestling and MMA athletes who train like it matters.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="wrestling.html">Wrestling</a></li>
+        <li><a href="mma.html">MMA</a></li>
+        <li><a href="team-kits.html">Team Kits</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Brand</h4>
+      <ul>
+        <li><a href="about.html">About KSV</a></li>
+        <li><a href="index.html#hero">New Arrivals</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Size Guide</a></li>
+        <li><a href="#">Shipping</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 KSV Performance Gear. All rights reserved.</p>
+    <p>Built for the mat. Built for the cage.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

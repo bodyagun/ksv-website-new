@@ -1,0 +1,376 @@
+/* ==========================================================================
+   PAGE HEADER (used on category + team-kits pages)
+   ========================================================================== */
+
+.page-hero {
+  background: var(--bg-inverse);
+  color: var(--text-inverse);
+  padding: clamp(50px, 9vw, 90px) clamp(20px, 6vw, 80px) clamp(40px, 6vw, 60px);
+  text-align: center;
+}
+
+.page-hero .eyebrow {
+  justify-content: center;
+}
+
+.page-hero h1 {
+  font-size: clamp(48px, 9vw, 96px);
+  margin: 0 0 12px;
+}
+
+.page-hero p {
+  color: var(--text-inverse-dim);
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 17px;
+}
+
+/* ==========================================================================
+   ANIMATED TABS (Front / Back, category filters, etc.)
+   ========================================================================== */
+
+.tabbar {
+  display: inline-flex;
+  position: relative;
+  background: var(--surface-alt);
+  border-radius: 50px;
+  padding: 5px;
+  gap: 4px;
+  margin: 0 auto 40px;
+}
+
+.tabbar-indicator {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: calc(100% - 10px);
+  border-radius: 50px;
+  background: var(--btn-bg);
+  transition: transform var(--dur-mid) var(--ease-snap), width var(--dur-mid) var(--ease-snap);
+  z-index: 0;
+}
+
+.tab {
+  position: relative;
+  z-index: 1;
+  padding: 11px 26px;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.04em;
+  border-radius: 50px;
+  cursor: pointer;
+  color: var(--text);
+  transition: color var(--dur-mid) var(--ease-out);
+  white-space: nowrap;
+}
+
+.tab.active {
+  color: var(--btn-text);
+}
+
+.tabs-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+/* Panel crossfade + slide when switching tabs */
+.tab-panels {
+  position: relative;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+  animation: panel-in var(--dur-mid) var(--ease-out) both;
+}
+
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-panel.active { animation: none; }
+}
+
+/* ==========================================================================
+   PRODUCT GRID
+   ========================================================================== */
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 26px;
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--dur-mid) var(--ease-snap), box-shadow var(--dur-mid);
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.product-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--plate);
+  overflow: hidden;
+}
+
+.product-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--dur-slow) var(--ease-out), opacity var(--dur-mid) var(--ease-out);
+}
+
+.product-card:hover .product-media img {
+  transform: scale(1.05);
+}
+
+.product-tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+.product-body {
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.product-body h3 {
+  font-size: 24px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.product-body p {
+  color: var(--text-dim);
+  font-size: 14px;
+  flex: 1;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.product-price {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.product-cta {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid var(--border-strong);
+  padding: 8px 16px;
+  border-radius: 50px;
+  transition: background var(--dur-fast) var(--ease-out), color var(--dur-fast);
+}
+
+.product-cta:hover {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+/* ==========================================================================
+   TEAM KITS PAGE
+   ========================================================================== */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  transition: transform var(--dur-mid) var(--ease-snap), box-shadow var(--dur-mid);
+}
+
+.team-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.team-card-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--plate);
+  overflow: hidden;
+}
+
+.team-card-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity var(--dur-mid) var(--ease-out);
+}
+
+.team-card-media img.active {
+  opacity: 1;
+}
+
+.team-flip {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 2;
+  background: rgba(10, 10, 10, 0.65);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  padding: 8px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: background var(--dur-fast);
+}
+
+.team-flip:hover {
+  background: var(--accent);
+}
+
+.team-flip svg {
+  transition: transform var(--dur-mid) var(--ease-snap);
+}
+
+.team-flip.flipped svg {
+  transform: rotate(180deg);
+}
+
+.team-card-body {
+  padding: 22px 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.team-card-body h3 {
+  font-size: 28px;
+}
+
+.team-card-body span {
+  font-size: 13px;
+  color: var(--text-dim);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.flag-chip {
+  width: 34px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+/* simple css flags so we don't need extra assets */
+.flag-georgia {
+  background: #fff;
+  position: relative;
+}
+.flag-georgia::before, .flag-georgia::after {
+  content: "";
+  position: absolute;
+  background: #e0312d;
+}
+.flag-georgia::before { inset: 0 0 0 0; width: 100%; height: 28%; top: 36%; }
+.flag-georgia::after { inset: 0; width: 28%; height: 100%; left: 36%; }
+
+.flag-germany {
+  display: flex;
+  flex-direction: column;
+}
+.flag-germany span { flex: 1; }
+.flag-germany .b1 { background: #000; }
+.flag-germany .b2 { background: #d00; }
+.flag-germany .b3 { background: #ffce00; }
+
+.flag-kazakhstan {
+  background: #00afca;
+  position: relative;
+}
+.flag-kazakhstan::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffd400;
+  top: 7px;
+  left: 12px;
+}
+
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 520px) {
+  .tabbar {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 11px 14px;
+  }
+
+  .team-card-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

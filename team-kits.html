@@ -4,8 +4,8 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light dark" />
-<title>KSV Performance Gear — Gear Built for Champions</title>
-<meta name="description" content="KSV Performance Gear: combat-ready wrestling and MMA apparel engineered for athletes who refuse to settle." />
+<title>National Team Kits — KSV Performance</title>
+<meta name="description" content="KSV national wrestling team kits for Georgia, Germany, and Kazakhstan — front and back views." />
 
 <link rel="icon" href="assets/ksvicon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="css/reset.css" />
 <link rel="stylesheet" href="css/theme.css" />
 <link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/pages.css" />
 
-<!-- Apply saved/system theme before paint to avoid a flash of the wrong theme -->
 <script>
   (function () {
     try {
@@ -31,7 +31,6 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-
 <div class="nav-scrim"></div>
 
 <header class="site-header">
@@ -51,7 +50,7 @@
           <a class="dropdown-link" href="mma.html" role="menuitem"><strong>Drop 04 — Fight Week</strong><span>Fresh MMA rash guards &amp; shorts</span></a>
           <a class="dropdown-link" href="wrestling.html" role="menuitem"><strong>Mat Ready</strong><span>New singlets just landed</span></a>
           <a class="dropdown-link" href="team-kits.html" role="menuitem"><strong>National Kits</strong><span>Georgia, Germany &amp; Kazakhstan</span></a>
-          <a class="dropdown-link" href="#hero" role="menuitem"><strong>Train Suit</strong><span>The piece everyone's asking about</span></a>
+          <a class="dropdown-link" href="index.html#hero" role="menuitem"><strong>Train Suit</strong><span>The piece everyone's asking about</span></a>
         </div>
       </li>
 
@@ -91,12 +90,10 @@
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21L16.65 16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input type="text" placeholder="Search" readonly tabindex="-1" aria-label="Search (display only)" />
       </div>
-
       <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode">
         <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5V5M12 19V21.5M4.2 4.2L6 6M18 18L19.8 19.8M2.5 12H5M19 12H21.5M4.2 19.8L6 18M18 6L19.8 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
         <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
       </button>
-
       <button class="icon-btn menu-toggle" type="button" aria-expanded="false" aria-label="Open menu">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6H21M3 12H21M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
       </button>
@@ -106,73 +103,76 @@
 
 <main id="main">
 
-  <section class="hero" id="hero">
-    <div class="hero-copy">
-      <span class="eyebrow">KSV Performance Gear</span>
-      <h1 class="hero-title">GEAR BUILT<br/>FOR CHAMPIONS.</h1>
-      <p>Engineered for athletes who refuse to settle. Lightweight, durable, and built to move with you — from the first takedown to the final bell.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="wrestling.html">Shop Wrestling</a>
-        <a class="btn btn-ghost" href="mma.html">Shop MMA</a>
-      </div>
-    </div>
-    <div class="hero-media">
-      <div class="hero-media-plate"></div>
-      <img src="assets/model1.jpg" alt="Athlete wearing the KSV Train Suit, long-sleeve layered top with KSV emblem" width="900" height="809" loading="eager" />
-    </div>
+  <section class="page-hero">
+    <span class="eyebrow">National Team Kits</span>
+    <h1>REP YOUR COLORS.</h1>
+    <p>Official-style KSV wrestling kits built for national squads. Tap a card to flip between front and back.</p>
   </section>
 
-  <div class="slash-divider" aria-hidden="true">
-    <svg viewBox="0 0 1200 64" preserveAspectRatio="none">
-      <path d="M0 50 L420 50 L470 10 L1200 10" fill="none" stroke-width="2"/>
-    </svg>
-  </div>
+  <section class="section">
+    <div class="team-grid">
 
-  <section class="section" data-reveal>
-    <div class="section-head">
-      <h2>Why KSV?</h2>
-      <p>Three reasons it's the only brand on our competition-day checklist.</p>
-    </div>
-    <div class="card-grid">
-      <article class="feature-card">
-        <div class="feature-card-media">
-          <img src="assets/model2.jpg" alt="Close-up of KSV logo printed on premium moisture-wicking fabric" loading="lazy" />
+      <article class="team-card">
+        <div class="team-card-media">
+          <img class="img-front active" src="assets/georgia-front.jpg" alt="Georgia wrestling team kit, front view, red jersey with national crest" loading="lazy" />
+          <img class="img-back" src="assets/georgia-back.jpg" alt="Georgia wrestling team kit, back view, reading Georgia Wrestling Team" loading="lazy" />
+          <button class="team-flip" type="button" aria-label="Flip to see the back of the Georgia kit">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 3-6.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 4v5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="team-flip-label">Show back</span>
+          </button>
         </div>
-        <div class="feature-card-body">
-          <h3>Premium Fabric</h3>
-          <p>Made from moisture-wicking, breathable materials that keep you cool under pressure, round after round.</p>
-        </div>
-      </article>
-      <article class="feature-card">
-        <div class="feature-card-media">
-          <img src="assets/model3.jpg" alt="Close-up of reinforced KSV stitching on training gear next to a weight plate" loading="lazy" />
-        </div>
-        <div class="feature-card-body">
-          <h3>Built to Last</h3>
-          <p>Reinforced stitching and high-durability construction that survives every session — and then some.</p>
+        <div class="team-card-body">
+          <div>
+            <h3>Georgia</h3>
+            <span>Wrestling Team Kit</span>
+          </div>
+          <span class="flag-chip flag-georgia" aria-hidden="true"></span>
         </div>
       </article>
-      <article class="feature-card">
-        <div class="feature-card-media">
-          <img src="assets/kazakhstan-front.jpg" alt="Athlete wearing a KSV national wrestling team kit" loading="lazy" />
-        </div>
-        <div class="feature-card-body">
-          <h3>National Team Trusted</h3>
-          <p>The same kits worn by national wrestling squads on the world stage. See the <a href="team-kits.html" style="text-decoration:underline;">full Team Kits lineup</a>.</p>
-        </div>
-      </article>
-    </div>
-  </section>
 
-  <section class="quote-section" data-reveal>
-    <blockquote>"I've trained in a lot of gear. Nothing moves with me like KSV. It's the only brand I trust on competition day."</blockquote>
-    <cite>— KSV Sponsored Athlete</cite>
+      <article class="team-card">
+        <div class="team-card-media">
+          <img class="img-front active" src="assets/germany-front.jpg" alt="Germany wrestling team kit, front view, black jersey with gold eagle crest" loading="lazy" />
+          <img class="img-back" src="assets/germany-back.jpg" alt="Germany wrestling team kit, back view, reading Germany Wrestling Team" loading="lazy" />
+          <button class="team-flip" type="button" aria-label="Flip to see the back of the Germany kit">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 3-6.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 4v5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="team-flip-label">Show back</span>
+          </button>
+        </div>
+        <div class="team-card-body">
+          <div>
+            <h3>Germany</h3>
+            <span>Wrestling Team Kit</span>
+          </div>
+          <span class="flag-chip flag-germany" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span></span>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card-media">
+          <img class="img-front active" src="assets/kazakhstan-front.jpg" alt="Kazakhstan wrestling team kit, front view, blue jersey with sun and eagle emblem" loading="lazy" />
+          <img class="img-back" src="assets/kazakhstan-back.jpg" alt="Kazakhstan wrestling team kit, back view, reading Kazakhstan Wrestling Team" loading="lazy" />
+          <button class="team-flip" type="button" aria-label="Flip to see the back of the Kazakhstan kit">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1 0 3-6.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M3 4v5h5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span class="team-flip-label">Show back</span>
+          </button>
+        </div>
+        <div class="team-card-body">
+          <div>
+            <h3>Kazakhstan</h3>
+            <span>Wrestling Team Kit</span>
+          </div>
+          <span class="flag-chip flag-kazakhstan" aria-hidden="true"></span>
+        </div>
+      </article>
+
+    </div>
   </section>
 
   <section class="cta-band" data-reveal>
-    <h2>Ready to Level Up?</h2>
-    <p>Join thousands of athletes already training in KSV Performance Gear.</p>
-    <a class="btn btn-primary" href="wrestling.html">Shop the Collection</a>
+    <h2>Don't See Your Country?</h2>
+    <p>We're adding new national kits every season. Get in touch about custom team orders.</p>
+    <a class="btn btn-primary" href="about.html">Contact KSV</a>
   </section>
 
 </main>
@@ -195,7 +195,7 @@
       <h4>Brand</h4>
       <ul>
         <li><a href="about.html">About KSV</a></li>
-        <li><a href="#hero">New Arrivals</a></li>
+        <li><a href="index.html#hero">New Arrivals</a></li>
       </ul>
     </div>
     <div class="footer-col">
