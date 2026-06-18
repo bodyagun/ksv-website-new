@@ -1,0 +1,203 @@
+
+body {
+    font-family: Inter, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    min-height: 100vh;
+    justify-content: space-between;
+    flex: 1;
+    background-color: white;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: stretch;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+ul {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(17, 17, 17);
+     color: white;
+     align-self: stretch;
+     justify-content: center;
+     align-items: center;
+     height: 120px;
+}
+
+.footer p {
+     font-weight: 300;
+}
+
+.upper {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    align-self: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#gear {
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.upper1 {
+    display:flex;
+    flex-direction:column;
+    padding: 50px;
+}
+
+#model1 {
+    border: 1px solid black;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.upper1 p {
+    font-size: 22px;
+    max-width: 850px;
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: -15px;
+    margin-left: 2px;
+}
+
+.upper1 a {
+    margin: 0;
+    margin-top: 230px;
+    padding: 15px;
+    font-size: 30px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.middle h2 {
+    font-size: 100px;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.card p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 500px;
+    margin-top: -10px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(236, 236, 236);
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.quote blockquote {
+    font-size: 35px;
+    max-width: 800px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgb(29, 29, 29)
+}
+
+.quote p {
+    font-size: 45px;
+    font-weight: 300;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 145px;
+    color: #3f3f3f
+}
+
+.levelup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.levelup h2 {
+    font-size: 100px;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.levelup p {
+    font-size: 35px;
+    margin: 0;
+    font-weight: 450;
+    margin-top: -20px;
+}
+
+.levelup a {
+    margin: 30px;
+    padding: 15px;
+    font-size: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: 1px solid black;
+    align-self: stretch
+}
